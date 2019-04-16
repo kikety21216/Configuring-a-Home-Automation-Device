@@ -96,6 +96,7 @@ extension HMService {
                 case .opening: return ("Opening", #imageLiteral(resourceName: "door-opening"))
                 case .closing: return ("Closing", #imageLiteral(resourceName: "door-closing"))
                 case .stopped: return ("Stopped", #imageLiteral(resourceName: "door-closed"))
+                @unknown default: return ("Unknown", nil)
                 }
             } else {
                 return ("Unknown", #imageLiteral(resourceName: "door-closed"))
